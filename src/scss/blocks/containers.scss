@@ -1,0 +1,24 @@
+@use '../vars' as *;
+
+.container {
+    max-width: 1600px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    margin: 0 auto;
+    @include dt {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+.section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    &__title {
+        font-size: 47px;
+        font-weight: 600;
+        @include tablet {
+            font-size: 30px;
+        }
+    }
+}

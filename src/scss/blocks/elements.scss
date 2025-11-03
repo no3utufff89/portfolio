@@ -1,0 +1,27 @@
+@use '../vars' as *;
+
+.logo-link {
+    display: block;
+    max-width: max-content;
+    span {
+        font-weight: 700;
+        font-size: 48px;
+        @include dt {
+            font-size: 37px;
+        }
+        @include tablet {
+            font-size: 28px;
+        }
+    }
+}
+.glass {
+    background: var(--glass);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+.glow {
+    background-color: $orange;
+    filter: blur(350px);
+}

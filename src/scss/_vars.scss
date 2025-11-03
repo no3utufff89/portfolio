@@ -1,0 +1,58 @@
+//default colours
+$black: #000;
+$white: #fff;
+
+//layout colours
+$dark: #363636;
+$gray: #64748b;
+$orange: #f1662a;
+
+//transitions
+$transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+//rounds
+$round-s: 8px;
+$round-m: 20px;
+$round-l: 32px;
+$round-full: 50%;
+
+//Media queries
+$mobile: 650px;
+$tablet: 980px;
+$laptop-s: 1100px;
+$laptop: 1300px;
+$dt: 1600px;
+
+// Glass morphism
+$glass: rgba(255, 255, 255, 0.05);
+$glassBorder: rgba(255, 255, 255, 0.1);
+
+// Mixins
+@mixin dt {
+    @media (max-width: #{$dt}) {
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media (max-width: #{$laptop}) {
+        @content;
+    }
+}
+@mixin laptop-s {
+    @media (max-width: #{$laptop-s}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: #{$tablet}) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: #{$mobile}) {
+        @content;
+    }
+}

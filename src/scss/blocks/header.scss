@@ -1,0 +1,11 @@
+@use '../vars' as *;
+.header {
+    height: 90px;
+    align-items: center;
+    display: flex;
+    &__row {
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+    }
+}

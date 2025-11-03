@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/static/head.html', { "title":"Главная" })
+    <body>
+        @@include('html/static/header.html') @@include('html/main.html')
+        <div class="overlay"></div>
+        <div class="mobile-menu">
+            <ul class="mobile-menu__list">
+                <li class="mobile-menu__item">
+                    <a href="#hero" class="mobile-menu__link">Home</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#about" class="mobile-menu__link">About</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#skills" class="mobile-menu__link">Skills</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#projects" class="mobile-menu__link">Projects</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#contacts" class="mobile-menu__link">Contacts</a>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>
