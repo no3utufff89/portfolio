@@ -1,884 +1,808 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-        />
-        <link rel="apple-touch-icon" sizes="180x180" href="files/favicon-180x180.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="files/favicon-32x32.png" />
-        <link rel="shortcut icon" href="files/favicon.ico" />
-        <link
-            rel="preload"
-            href="fonts/Poppins/Poppins-300.woff2"
-            as="font"
-            type="font/woff2"
-            crossorigin
-        />
-        <link
-            rel="preload"
-            href="fonts/Poppins/Poppins-400.woff2"
-            as="font"
-            type="font/woff2"
-            crossorigin
-        />
-        <link
-            rel="preload"
-            href="fonts/Poppins/Poppins-500.woff2"
-            as="font"
-            type="font/woff2"
-            crossorigin
-        />
-        <link
-            rel="preload"
-            href="fonts/Poppins/Poppins-600.woff2"
-            as="font"
-            type="font/woff2"
-            crossorigin
-        />
-        <link
-            rel="preload"
-            href="fonts/Poppins/Poppins-700.woff2"
-            as="font"
-            type="font/woff2"
-            crossorigin
-        />
-        <link rel="preload" href="img/hero-800.webp" as="image" type="image/webp" />
-        <link
-            rel="preload"
-            href="img/hero-1200.webp"
-            as="image"
-            type="image/webp"
-            media="(min-width: 1201px)"
-        />
-        <link
-            rel="preload"
-            href="img/hero-400.webp"
-            as="image"
-            type="image/webp"
-            media="(max-width: 768px)"
-        />
-        <link rel="preload" href="img/circle.svg" as="image" type="image/svg+xml" />
-        <link rel="preload" href="img/react.svg" as="image" type="image/svg+xml" />
-        <link rel="preload" href="img/css.svg" as="image" type="image/svg+xml" />
-        <link rel="preload" href="img/html.svg" as="image" type="image/svg+xml" />
-        <link rel="preload" href="img/figma.svg" as="image" type="image/svg+xml" />
-        <meta property="og:title" content="Leonid Kazinsky Personal Page" />
-        <meta property="og:description" content="Leonid Kazinsky Personal Portfolio Page" />
-        <link rel="stylesheet" href="css/style.min.css?_v=20251104222500" />
-        <script type="module" src="js/app.js?_v=20251104222500"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="files/favicon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="files/favicon-32x32.png" />
+    <link rel="shortcut icon" href="files/favicon.ico" />
 
-        <title>Главная - Leonid Kazinsky Personal Page</title>
-    </head>
+    <link
+        rel="preload"
+        href="fonts/Poppins/Poppins-400.woff2"
+        as="font"
+        type="font/woff2"
+        crossorigin
+    />
+    <link
+        rel="preload"
+        href="fonts/Poppins/Poppins-600.woff2"
+        as="font"
+        type="font/woff2"
+        crossorigin
+    />
+    <link
+        rel="preload"
+        href="fonts/Poppins/Poppins-700.woff2"
+        as="font"
+        type="font/woff2"
+        crossorigin
+    />
+    <link rel="preload" href="img/hero-800.webp" as="image" type="image/webp" />
+    <link
+        rel="preload"
+        href="img/hero-1200.webp"
+        as="image"
+        type="image/webp"
+        media="(min-width: 1201px)"
+    />
+    <link
+        rel="preload"
+        href="img/hero-400.webp"
+        as="image"
+        type="image/webp"
+        media="(max-width: 768px)"
+    />
+    <link
+        rel="preload"
+        href="img/hero-mobile.webp"
+        as="image"
+        type="image/webp"
+        media="(max-width: 768px)"
+    />
+    <link
+        rel="preload"
+        href="img/hero-600.webp"
+        as="image"
+        type="image/webp"
+        media="(min-width: 769px) and (max-width: 1200px)"
+    />
+    <link rel="preload" href="img/circle.svg" as="image" type="image/svg+xml" />
+    <link rel="preload" href="img/react.svg" as="image" type="image/svg+xml" />
+    <link rel="preload" href="img/css.svg" as="image" type="image/svg+xml" />
+    <link rel="preload" href="img/html.svg" as="image" type="image/svg+xml" />
+    <link rel="preload" href="img/figma.svg" as="image" type="image/svg+xml" />
+    <meta property="og:title" content="Leonid Kazinsky Personal Page" />
+    <meta property="og:description" content="Leonid Kazinsky Personal Portfolio Page" />
+
+    <link
+        rel="preload"
+        href="css/style.css?_v=20251104233511"
+        as="style"
+        onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="css/style.css?_v=20251104233511" /></noscript>
+    <script type="module" src="js/app.js?_v=20251104233511" defer></script>
+
+    <title>Главная - Leonid Kazinsky Personal Page</title>
+</head>
 
     <body>
         <!-- Header -->
-        <header class="header">
-            <div class="container">
-                <div class="header__row">
-                    <a href="/" class="logo-link header__logo-link">
-                        <span class="logo-link__text">
-                            no3utufff<span class="text-orange">.</span>
-                        </span>
-                    </a>
-                    <nav class="nav">
-                        <ul class="nav-list">
-                            <li class="nav-list__item">
-                                <a href="#hero" class="nav-list__link"> Home </a>
-                            </li>
-                            <li class="nav-list__item">
-                                <a href="#about" class="nav-list__link"> About </a>
-                            </li>
-                            <li class="nav-list__item">
-                                <a href="#skills" class="nav-list__link"> Skills </a>
-                            </li>
-                            <li class="nav-list__item">
-                                <a href="#projects" class="nav-list__link"> Projects </a>
-                            </li>
-                            <li class="nav-list__item">
-                                <a href="#contacts" class="nav-list__link"> Contacts </a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <button class="nav-btn" aria-label="mobile menu button">
-                        <span class="nav-btn__line"></span>
-                    </button>
-                </div>
+<header class="header">
+    <div class="container">
+        <div class="header__row">
+            <a href="/" class="logo-link header__logo-link">
+                <span class="logo-link__text"> no3utufff<span class="text-orange">.</span> </span>
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-list__item">
+                        <a href="#hero" class="nav-list__link"> Home </a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="#about" class="nav-list__link"> About </a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="#skills" class="nav-list__link"> Skills </a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="#projects" class="nav-list__link"> Projects </a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="#contacts" class="nav-list__link"> Contacts </a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="nav-btn" aria-label="mobile menu button">
+                <span class="nav-btn__line"></span>
+            </button>
+        </div>
+    </div>
+</header>
+ <main class="main">
+    <!-- Hero section -->
+<section class="section hero" id="hero">
+    <div class="container">
+        <p class="text hero__top-text">Hello, I am</p>
+        <h1 class="title hero__title">Leonid Kazinsky</h1>
+        <p class="text hero__text">
+            <span class="text-orange">Frontend developer </span>with over four years of experience
+            building modern web applications. I specialize in React, TypeScript, and creating
+            intuitive user interfaces.
+        </p>
+        <div class="hero__links">
+            <a href="#projects" class="action-elem">
+                <svg class="icon">
+                    <use xlink:href="img/icons/sprite.svg#rocket_icon"></use>
+                </svg>
+                <span>Projects</span>
+            </a>
+            <a href="https://github.com/no3utufff89" target="_blank" class="action-elem">
+                <svg class="icon">
+                    <use xlink:href="img/icons/sprite.svg#git_icon"></use>
+                </svg>
+            </a>
+            <a href="https://t.me/no3utufff" target="_blank" class="action-elem">
+                <svg class="icon">
+                    <use xlink:href="img/icons/sprite.svg#tg_icon"></use>
+                </svg>
+            </a>
+        </div>
+        <div class="hero__images">
+            <div class="hero__image">
+                <picture>
+                    <!-- Мобильные устройства (до 768px) -->
+                    <source
+                        srcset="img/hero-mobile.webp"
+                        media="(max-width: 768px)"
+                        type="image/webp"
+                    />
+                    <!-- Планшеты (769px - 1200px) -->
+                    <source
+                        srcset="img/hero-600.webp"
+                        media="(min-width: 769px) and (max-width: 1200px)"
+                        type="image/webp"
+                    />
+                    <!-- Десктоп (1201px+) -->
+                    <source
+                        srcset="img/hero-800.webp"
+                        media="(min-width: 1201px)"
+                        type="image/webp"
+                    />
+                    <!-- Fallback -->
+                    <img
+                        src="img/hero-600.webp"
+                        alt="Leonid Kazinsky - Frontend Developer"
+                        width="718"
+                        height="561"
+                        style="aspect-ratio: 718/561"
+                        loading="eager"
+                        decoding="async"
+                    />
+                </picture>
             </div>
-        </header>
-        <main class="main">
-            <!-- Hero section -->
-            <section class="section hero" id="hero">
-                <div class="container">
-                    <p class="text hero__top-text">Hello, I am</p>
-                    <h1 class="title hero__title">Leonid Kazinsky</h1>
-                    <p class="text hero__text">
-                        <span class="text-orange">Frontend developer </span>with over four years of
-                        experience building modern web applications. I specialize in React,
-                        TypeScript, and creating intuitive user interfaces.
-                    </p>
-                    <div class="hero__links">
-                        <a href="#projects" class="action-elem">
-                            <svg class="icon">
-                                <use xlink:href="img/icons/sprite.svg#rocket_icon"></use>
-                            </svg>
-                            <span>Projects</span>
-                        </a>
-                        <a
-                            href="https://github.com/no3utufff89"
-                            target="_blank"
-                            class="action-elem"
-                        >
-                            <svg class="icon">
-                                <use xlink:href="img/icons/sprite.svg#git_icon"></use>
-                            </svg>
-                        </a>
-                        <a href="https://t.me/no3utufff" target="_blank" class="action-elem">
-                            <svg class="icon">
-                                <use xlink:href="img/icons/sprite.svg#tg_icon"></use>
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="hero__images">
-                        <div class="hero__image">
-                            <picture>
-                                <source
-                                    srcset="
-                                        img/hero-400.webp   400w,
-                                        img/hero-800.webp   800w,
-                                        img/hero-1200.webp 1200w
-                                    "
-                                    sizes="(max-width: 768px) 400px,
-                   (max-width: 1200px) 800px,
-                   1200px"
-                                    type="image/webp"
-                                />
-                                <img
-                                    src="img/hero-800.webp"
-                                    alt="Leonid Kazinsky"
-                                    width="718"
-                                    height="561"
-                                    loading="eager"
-                                />
-                            </picture>
-                        </div>
-                        <img
-                            class="hero__circle-image hero-decor-item"
-                            src="img/circle.svg"
-                            alt="react"
-                        />
-                        <img
-                            class="hero__react-image hero-decor-item"
-                            src="img/react.svg"
-                            alt="react"
-                        />
-                        <img class="hero__css-image hero-decor-item" src="img/css.svg" alt="css" />
-                        <img
-                            class="hero__html-image hero-decor-item"
-                            src="img/html.svg"
-                            alt="html"
-                        />
-                        <img
-                            class="hero__figma-image hero-decor-item"
-                            src="img/figma.svg"
-                            alt="figma"
-                        />
-                    </div>
-                    <div class="glow hero__glow"></div>
-                    <div class="hero__lightning-image">
-                        <picture
-                            ><source srcset="img/fig_02.webp" type="image/webp" />
-                            <img src="img/fig_02.png" alt="lightning image"
-                        /></picture>
-                    </div>
-                </div>
-            </section>
-            <!-- About section -->
-            <section class="section about" id="about">
-                <div class="container">
-                    <h2 class="section__title about__title">About</h2>
-                    <div class="about__content">
-                        <div class="about__image">
-                            <picture
-                                ><source srcset="img/about_01.webp" type="image/webp" />
-                                <img
-                                    src="img/about_01.png"
-                                    alt=""
-                                    loading="lazy"
-                                    width="660"
-                                    height="380"
-                            /></picture>
-                        </div>
-                        <div class="about__text-block">
-                            <p class="text about__text">
-                                I've been developing user interfaces for over four years. I
-                                specialize in creating modern web applications using HTML, CSS,
-                                JavaScript, and modern frameworks.
-                            </p>
-                            <p class="text about__text">
-                                My approach to work includes attention to detail, a commitment to
-                                creating clean and maintainable code, and continuous learning about
-                                new technologies and best practices.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="glow about__glow"></div>
-                </div>
-            </section>
+            <img class="hero__circle-image hero-decor-item" src="img/circle.svg" alt="react" />
+            <img class="hero__react-image hero-decor-item" src="img/react.svg" alt="react" />
+            <img class="hero__css-image hero-decor-item" src="img/css.svg" alt="css" />
+            <img class="hero__html-image hero-decor-item" src="img/html.svg" alt="html" />
+            <img class="hero__figma-image hero-decor-item" src="img/figma.svg" alt="figma" />
+        </div>
+        <div class="glow hero__glow"></div>
+        <div class="hero__lightning-image">
+            <picture><source srcset="img/fig_02.webp" type="image/webp"><img src="img/fig_02.png" alt="lightning image" /></picture>
+        </div>
+    </div>
+</section>
+ <!-- About section -->
+<section class="section about" id="about">
+    <div class="container">
+        <h2 class="section__title about__title">About</h2>
+        <div class="about__content">
+            <div class="about__image">
+                <picture><source srcset="img/about_01.webp" type="image/webp"><img src="img/about_01.png" alt="" loading="lazy" width="660" height="380" /></picture>
+            </div>
+            <div class="about__text-block">
+                <p class="text about__text">
+                    I've been developing user interfaces for over four years. I specialize in
+                    creating modern web applications using HTML, CSS, JavaScript, and modern
+                    frameworks.
+                </p>
+                <p class="text about__text">
+                    My approach to work includes attention to detail, a commitment to creating clean
+                    and maintainable code, and continuous learning about new technologies and best
+                    practices.
+                </p>
+            </div>
+        </div>
+        <div class="glow about__glow"></div>
+    </div>
+</section>
 
-            <!-- Skills section -->
-            <section class="section skills" id="skills">
-                <div class="container">
-                    <h2 class="section__title skills__title">Skills</h2>
-                    <ul class="skills-list">
-                        <li class="skills-list__item skills-card">
-                            <div class="skills-card__header">
-                                <div class="skills-card__icon-wrapper">
-                                    <svg class="icon">
-                                        <use xlink:href="img/icons/sprite.svg#html_icon"></use>
-                                    </svg>
-                                </div>
-                                <div class="skills-card__icon-wrapper">
-                                    <svg class="icon">
-                                        <use xlink:href="img/icons/sprite.svg#js_icon"></use>
-                                    </svg>
-                                </div>
-                                <div class="skills-card__icon-wrapper">
-                                    <svg class="icon">
-                                        <use xlink:href="img/icons/sprite.svg#ts_icon"></use>
-                                    </svg>
-                                </div>
-                                <div class="skills-card__icon-wrapper">
-                                    <svg class="icon">
-                                        <use xlink:href="img/icons/sprite.svg#next_icon"></use>
-                                    </svg>
-                                </div>
-                                <div class="skills-card__icon-wrapper">
-                                    <svg class="icon">
-                                        <use xlink:href="img/icons/sprite.svg#redux_icon"></use>
-                                    </svg>
-                                </div>
-                                <div class="skills-card__icon-wrapper">
-                                    <svg class="icon">
-                                        <use xlink:href="img/icons/sprite.svg#react_icon"></use>
-                                    </svg>
-                                </div>
+    <!-- Skills section -->
+<section class="section skills" id="skills">
+    <div class="container">
+        <h2 class="section__title skills__title">Skills</h2>
+        <ul class="skills-list">
+            <li class="skills-list__item skills-card">
+                <div class="skills-card__header">
+                    <div class="skills-card__icon-wrapper">
+                        <svg class="icon">
+                            <use xlink:href="img/icons/sprite.svg#html_icon"></use>
+                        </svg>
+                    </div>
+                    <div class="skills-card__icon-wrapper">
+                        <svg class="icon">
+                            <use xlink:href="img/icons/sprite.svg#js_icon"></use>
+                        </svg>
+                    </div>
+                    <div class="skills-card__icon-wrapper">
+                        <svg class="icon">
+                            <use xlink:href="img/icons/sprite.svg#ts_icon"></use>
+                        </svg>
+                    </div>
+                    <div class="skills-card__icon-wrapper">
+                        <svg class="icon">
+                            <use xlink:href="img/icons/sprite.svg#next_icon"></use>
+                        </svg>
+                    </div>
+                    <div class="skills-card__icon-wrapper">
+                        <svg class="icon">
+                            <use xlink:href="img/icons/sprite.svg#redux_icon"></use>
+                        </svg>
+                    </div>
+                    <div class="skills-card__icon-wrapper">
+                        <svg class="icon">
+                            <use xlink:href="img/icons/sprite.svg#react_icon"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="skills-card__body">
+                    <p class="skills-card__title">Front-End Development</p>
+                    <p class="skills-card__desc">
+                        Building engaging and user-friendly web interfaces using modern frameworks
+                        and technologies with expertise.
+                    </p>
+                </div>
+            </li>
+            <li class="skills-list__item skills-card">
+                <div class="skills-card__header">
+                    <div class="skills-card__icon-wrapper">
+                        <svg class="icon">
+                            <use xlink:href="img/icons/sprite.svg#css_icon"></use>
+                        </svg>
+                    </div>
+                    <div class="skills-card__icon-wrapper">
+                        <svg class="icon">
+                            <use xlink:href="img/icons/sprite.svg#tw_icon"></use>
+                        </svg>
+                    </div>
+                    <div class="skills-card__icon-wrapper">
+                        <svg class="icon">
+                            <use xlink:href="img/icons/sprite.svg#sass_icon"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="skills-card__body">
+                    <p class="skills-card__title">Styling & Design</p>
+                    <p class="skills-card__desc">
+                        Crafting visually appealing and responsive designs with advanced styling
+                        tools and frameworks.
+                    </p>
+                </div>
+            </li>
+            <li class="skills-list__item skills-card">
+                <div class="skills-card__header">
+                    <div class="skills-card__icon-wrapper">
+                        <svg class="icon">
+                            <use xlink:href="img/icons/sprite.svg#figma_icon"></use>
+                        </svg>
+                    </div>
+                    <div class="skills-card__icon-wrapper">
+                        <svg class="icon">
+                            <use xlink:href="img/icons/sprite.svg#git_icon"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="skills-card__body">
+                    <p class="skills-card__title">Tools</p>
+                    <p class="skills-card__desc">I use modern tools in my work.</p>
+                </div>
+            </li>
+            <li class="skills-list__item skills-card">
+                <div class="skills-card__header">
+                    <div class="skills-card__icon-wrapper">
+                        <svg class="icon">
+                            <use xlink:href="img/icons/sprite.svg#node_icon"></use>
+                        </svg>
+                    </div>
+                    <div class="skills-card__icon-wrapper">
+                        <svg class="icon">
+                            <use xlink:href="img/icons/sprite.svg#express_icon"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="skills-card__body">
+                    <p class="skills-card__title">Back-End Development</p>
+                    <p class="skills-card__desc">
+                        Developing robust server-side logic and APIs to power dynamic and scalable
+                        web applications.
+                    </p>
+                </div>
+            </li>
+
+            <li class="skills-list__item skills-card">
+                <div class="skills-card__header">
+                    <div class="skills-card__text-wrapper">
+                        <span> Communication</span>
+                    </div>
+                    <div class="skills-card__text-wrapper">
+                        <span>Time Management</span>
+                    </div>
+                    <div class="skills-card__text-wrapper">
+                        <span> Problem Solving</span>
+                    </div>
+                </div>
+                <div class="skills-card__body">
+                    <p class="skills-card__title">Personal Development</p>
+                    <p class="skills-card__desc">
+                        Committed to continuous learning and personal growth to excel in both
+                        professional and collaborative environments.
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+<!-- Projects section -->
+<section class="section projects" id="projects">
+    <div class="container">
+        <div class="projects__header">
+            <h2 class="section__title projects__title">Projects</h2>
+            <div class="glide__arrows" data-glide-el="controls">
+                <button
+                    type="button"
+                    aria-label="Previous slide"
+                    class="glide__arrow glide__arrow_left"
+                    data-glide-dir="<"
+                >
+                    <svg class="icon">
+                        <use xlink:href="img/icons/sprite.svg#arrow_icon"></use>
+                    </svg>
+                </button>
+                <button
+                    type="button"
+                    aria-label="Next slide"
+                    class="glide__arrow glide__arrow_right"
+                    data-glide-dir=">"
+                >
+                    <svg class="icon">
+                        <use xlink:href="img/icons/sprite.svg#arrow_icon"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="projects__content">
+            <div class="glide projects__glide">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="projects-list glide__slides">
+                        <li
+                            class="projects-list__item project-card glide__slide"
+                            data-type="landing"
+                        >
+                            <div class="project-card__header">
+                                <picture>
+                                    <source
+                                        srcset="
+                                            img/previews/gk-400.webp   400w,
+                                            img/previews/gk-800.webp   800w,
+                                            img/previews/gk-1200.webp 1200w
+                                        "
+                                        sizes="(max-width: 768px) 400px,
+               (max-width: 1200px) 800px,
+               1200px"
+                                        type="image/webp"
+                                    />
+                                    <img
+                                        src="img/previews/gk-800.webp"
+                                        alt="GK Project"
+                                        width="400"
+                                        height="300"
+                                        loading="lazy"
+                                    />
+                                </picture>
                             </div>
-                            <div class="skills-card__body">
-                                <p class="skills-card__title">Front-End Development</p>
-                                <p class="skills-card__desc">
-                                    Building engaging and user-friendly web interfaces using modern
-                                    frameworks and technologies with expertise.
+                            <div class="project-card__body">
+                                <p class="project-card__title">GK Landing</p>
+                                <p class="project-card__desc">
+                                    Switzerland Park residential complex
                                 </p>
-                            </div>
-                        </li>
-                        <li class="skills-list__item skills-card">
-                            <div class="skills-card__header">
-                                <div class="skills-card__icon-wrapper">
-                                    <svg class="icon">
-                                        <use xlink:href="img/icons/sprite.svg#css_icon"></use>
-                                    </svg>
+                                <div class="project-card__type">
+                                    <span>Type:</span>
+                                    <span>Landing</span>
                                 </div>
-                                <div class="skills-card__icon-wrapper">
-                                    <svg class="icon">
-                                        <use xlink:href="img/icons/sprite.svg#tw_icon"></use>
-                                    </svg>
-                                </div>
-                                <div class="skills-card__icon-wrapper">
-                                    <svg class="icon">
-                                        <use xlink:href="img/icons/sprite.svg#sass_icon"></use>
-                                    </svg>
+                                <div class="project-card__tech-list">
+                                    <span>html</span>
+                                    <span>css</span>
+                                    <span>scss</span>
+                                    <span>js</span>
+                                    <span>gulp</span>
                                 </div>
                             </div>
-                            <div class="skills-card__body">
-                                <p class="skills-card__title">Styling & Design</p>
-                                <p class="skills-card__desc">
-                                    Crafting visually appealing and responsive designs with advanced
-                                    styling tools and frameworks.
-                                </p>
-                            </div>
-                        </li>
-                        <li class="skills-list__item skills-card">
-                            <div class="skills-card__header">
-                                <div class="skills-card__icon-wrapper">
-                                    <svg class="icon">
-                                        <use xlink:href="img/icons/sprite.svg#figma_icon"></use>
-                                    </svg>
-                                </div>
-                                <div class="skills-card__icon-wrapper">
+                            <div class="project-card__footer">
+                                <a
+                                    href="https://github.com/no3utufff89/gk-landing/tree/slider_v2"
+                                    class="project-card__link action-elem"
+                                    target="_blank"
+                                >
                                     <svg class="icon">
                                         <use xlink:href="img/icons/sprite.svg#git_icon"></use>
                                     </svg>
-                                </div>
-                            </div>
-                            <div class="skills-card__body">
-                                <p class="skills-card__title">Tools</p>
-                                <p class="skills-card__desc">I use modern tools in my work.</p>
+                                    <span>Code</span>
+                                </a>
+                                <a
+                                    href="https://no3utufff89.github.io/gk-landing/"
+                                    class="project-card__link action-elem"
+                                    target="_blank"
+                                >
+                                    <svg class="icon">
+                                        <use xlink:href="img/icons/sprite.svg#link_icon"></use>
+                                    </svg>
+                                    <span>Live</span>
+                                </a>
                             </div>
                         </li>
-                        <li class="skills-list__item skills-card">
-                            <div class="skills-card__header">
-                                <div class="skills-card__icon-wrapper">
-                                    <svg class="icon">
-                                        <use xlink:href="img/icons/sprite.svg#node_icon"></use>
-                                    </svg>
+                        <li
+                            class="projects-list__item project-card glide__slide"
+                            data-type="landing"
+                        >
+                            <div class="project-card__header">
+                                <picture>
+                                    <source
+                                        srcset="
+                                            img/previews/rt-400.webp   400w,
+                                            img/previews/rt-800.webp   800w,
+                                            img/previews/rt-1200.webp 1200w
+                                        "
+                                        sizes="(max-width: 768px) 400px,
+               (max-width: 1200px) 800px,
+               1200px"
+                                        type="image/webp"
+                                    />
+                                    <img
+                                        src="img/previews/rt-800.webp"
+                                        alt="Room Tibet - Landing page for mountain trips"
+                                        width="400"
+                                        height="300"
+                                        loading="lazy"
+                                    />
+                                </picture>
+                            </div>
+                            <div class="project-card__body">
+                                <p class="project-card__title">Room tibet</p>
+                                <p class="project-card__desc">Landing page for mountain trips</p>
+                                <div class="project-card__type">
+                                    <span>Type:</span>
+                                    <span>Landing</span>
                                 </div>
-                                <div class="skills-card__icon-wrapper">
-                                    <svg class="icon">
-                                        <use xlink:href="img/icons/sprite.svg#express_icon"></use>
-                                    </svg>
+                                <div class="project-card__tech-list">
+                                    <span>html</span>
+                                    <span>css</span>
+                                    <span>js</span>
+                                    <span>gulp</span>
                                 </div>
                             </div>
-                            <div class="skills-card__body">
-                                <p class="skills-card__title">Back-End Development</p>
-                                <p class="skills-card__desc">
-                                    Developing robust server-side logic and APIs to power dynamic
-                                    and scalable web applications.
-                                </p>
+                            <div class="project-card__footer">
+                                <a
+                                    href="https://github.com/no3utufff89/RoomTibet-Landing"
+                                    class="project-card__link action-elem"
+                                    target="_blank"
+                                >
+                                    <svg class="icon">
+                                        <use xlink:href="img/icons/sprite.svg#git_icon"></use>
+                                    </svg>
+                                    <span>Code</span>
+                                </a>
+                                <a
+                                    href="https://no3utufff89.github.io/RoomTibet-Landing"
+                                    class="project-card__link action-elem"
+                                    target="_blank"
+                                >
+                                    <svg class="icon">
+                                        <use xlink:href="img/icons/sprite.svg#link_icon"></use>
+                                    </svg>
+                                    <span>Live</span>
+                                </a>
                             </div>
                         </li>
-
-                        <li class="skills-list__item skills-card">
-                            <div class="skills-card__header">
-                                <div class="skills-card__text-wrapper">
-                                    <span> Communication</span>
+                        <li
+                            class="projects-list__item project-card glide__slide"
+                            data-type="landing"
+                        >
+                            <div class="project-card__header">
+                                <picture>
+                                    <source
+                                        srcset="
+                                            img/previews/cars-full-preview-400.webp   400w,
+                                            img/previews/cars-full-preview-800.webp   800w,
+                                            img/previews/cars-full-preview-1200.webp 1200w
+                                        "
+                                        sizes="(max-width: 768px) 400px,
+               (max-width: 1200px) 800px,
+               1200px"
+                                        type="image/webp"
+                                    />
+                                    <img
+                                        src="img/previews/cars-full-preview-800.webp"
+                                        alt="USA Cars For You - Landing page for importing cars from the USA and Canada"
+                                        width="400"
+                                        height="300"
+                                        loading="lazy"
+                                    />
+                                </picture>
+                            </div>
+                            <div class="project-card__body">
+                                <p class="project-card__title">Usa cars for you</p>
+                                <p class="project-card__desc">
+                                    Landing page for importing cars from the USA and Canada
+                                </p>
+                                <div class="project-card__type">
+                                    <span>Type:</span>
+                                    <span>Landing</span>
                                 </div>
-                                <div class="skills-card__text-wrapper">
-                                    <span>Time Management</span>
-                                </div>
-                                <div class="skills-card__text-wrapper">
-                                    <span> Problem Solving</span>
+                                <div class="project-card__tech-list">
+                                    <span>html</span>
+                                    <span>css</span>
+                                    <span>js</span>
+                                    <span>gulp</span>
                                 </div>
                             </div>
-                            <div class="skills-card__body">
-                                <p class="skills-card__title">Personal Development</p>
-                                <p class="skills-card__desc">
-                                    Committed to continuous learning and personal growth to excel in
-                                    both professional and collaborative environments.
+                            <div class="project-card__footer">
+                                <a
+                                    href="https://github.com/no3utufff89/cars_from_usa_landing"
+                                    class="project-card__link action-elem"
+                                    target="_blank"
+                                >
+                                    <svg class="icon">
+                                        <use xlink:href="img/icons/sprite.svg#git_icon"></use>
+                                    </svg>
+                                    <span>Code</span>
+                                </a>
+                                <a
+                                    href="https://no3utufff89.github.io/cars_from_usa_landing/"
+                                    class="project-card__link action-elem"
+                                    target="_blank"
+                                >
+                                    <svg class="icon">
+                                        <use xlink:href="img/icons/sprite.svg#link_icon"></use>
+                                    </svg>
+                                    <span>Live</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li
+                            class="projects-list__item project-card glide__slide"
+                            data-type="landing"
+                        >
+                            <div class="project-card__header">
+                                <picture>
+                                    <source
+                                        srcset="
+                                            img/previews/tank-400.webp   400w,
+                                            img/previews/tank-800.webp   800w,
+                                            img/previews/tank-1200.webp 1200w
+                                        "
+                                        sizes="(max-width: 768px) 400px,
+               (max-width: 1200px) 800px,
+               1200px"
+                                        type="image/webp"
+                                    />
+                                    <img
+                                        src="img/previews/tank-800.webp"
+                                        alt="Car Showroom - Landing page for the Tank car dealership"
+                                        width="400"
+                                        height="300"
+                                        loading="lazy"
+                                    />
+                                </picture>
+                            </div>
+                            <div class="project-card__body">
+                                <p class="project-card__title">Car showroom</p>
+                                <p class="project-card__desc">
+                                    Landing page for the Tank car dealership
                                 </p>
+                                <div class="project-card__type">
+                                    <span>Type:</span>
+                                    <span>Landing</span>
+                                </div>
+                                <div class="project-card__tech-list">
+                                    <span>html</span>
+                                    <span>css</span>
+                                    <span>js</span>
+                                    <span>gulp</span>
+                                </div>
+                            </div>
+                            <div class="project-card__footer">
+                                <a
+                                    href="https://github.com/no3utufff89/Tank_landing"
+                                    class="project-card__link action-elem"
+                                    target="_blank"
+                                >
+                                    <svg class="icon">
+                                        <use xlink:href="img/icons/sprite.svg#git_icon"></use>
+                                    </svg>
+                                    <span>Code</span>
+                                </a>
+                                <a
+                                    href="https://no3utufff89.github.io/Tank_landing/"
+                                    class="project-card__link action-elem"
+                                    target="_blank"
+                                >
+                                    <svg class="icon">
+                                        <use xlink:href="img/icons/sprite.svg#link_icon"></use>
+                                    </svg>
+                                    <span>Live</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="projects-list__item project-card glide__slide" data-type="game">
+                            <div class="project-card__header">
+                                <picture>
+                                    <source
+                                        srcset="
+                                            img/previews/MemoryGame-400.webp   400w,
+                                            img/previews/MemoryGame-800.webp   800w,
+                                            img/previews/MemoryGame-1200.webp 1200w
+                                        "
+                                        sizes="(max-width: 768px) 400px,
+               (max-width: 1200px) 800px,
+               1200px"
+                                        type="image/webp"
+                                    />
+                                    <img
+                                        src="img/previews/MemoryGame-800.webp"
+                                        alt="Memory Game - JavaScript cards matching game"
+                                        width="400"
+                                        height="300"
+                                        loading="lazy"
+                                    />
+                                </picture>
+                            </div>
+                            <div class="project-card__body">
+                                <p class="project-card__title">Memory game</p>
+                                <p class="project-card__desc">JavaScipt cards game</p>
+                                <div class="project-card__type">
+                                    <span>Type:</span>
+                                    <span>Game</span>
+                                </div>
+                                <div class="project-card__tech-list">
+                                    <span>html</span>
+                                    <span>css</span>
+                                    <span>js</span>
+                                </div>
+                            </div>
+                            <div class="project-card__footer">
+                                <a
+                                    href="https://github.com/no3utufff89/MemoryGame"
+                                    class="project-card__link action-elem"
+                                    target="_blank"
+                                >
+                                    <svg class="icon">
+                                        <use xlink:href="img/icons/sprite.svg#git_icon"></use>
+                                    </svg>
+                                    <span>Code</span>
+                                </a>
+                                <a
+                                    href="https://memory-game-mu-khaki-30.vercel.app/"
+                                    class="project-card__link action-elem"
+                                    target="_blank"
+                                >
+                                    <svg class="icon">
+                                        <use xlink:href="img/icons/sprite.svg#link_icon"></use>
+                                    </svg>
+                                    <span>Live</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="projects-list__item project-card glide__slide" data-type="other">
+                            <div class="project-card__header">
+                                <picture>
+                                    <source
+                                        srcset="
+                                            img/previews/Todo-400.webp   400w,
+                                            img/previews/Todo-800.webp   800w,
+                                            img/previews/Todo-1200.webp 1200w
+                                        "
+                                        sizes="(max-width: 768px) 400px,
+               (max-width: 1200px) 800px,
+               1200px"
+                                        type="image/webp"
+                                    />
+                                    <img
+                                        src="img/previews/Todo-800.webp"
+                                        alt="React Todo List - TypeScript task management application"
+                                        width="400"
+                                        height="300"
+                                        loading="lazy"
+                                    />
+                                </picture>
+                            </div>
+                            <div class="project-card__body">
+                                <p class="project-card__title">React ToDo list</p>
+                                <p class="project-card__desc">TypeScript ToDo list</p>
+                                <div class="project-card__type">
+                                    <span>Type:</span>
+                                    <span>Other</span>
+                                </div>
+                                <div class="project-card__tech-list">
+                                    <span>html</span>
+                                    <span>css</span>
+                                    <span>ts</span>
+                                    <span>react</span>
+                                    <span>redux</span>
+                                </div>
+                            </div>
+                            <div class="project-card__footer">
+                                <a
+                                    href="https://github.com/no3utufff89/ToDoApp"
+                                    class="project-card__link action-elem"
+                                    target="_blank"
+                                >
+                                    <svg class="icon">
+                                        <use xlink:href="img/icons/sprite.svg#git_icon"></use>
+                                    </svg>
+                                    <span>Code</span>
+                                </a>
+                                <a
+                                    href="https://to-do-app-inky-pi.vercel.app"
+                                    class="project-card__link action-elem"
+                                    target="_blank"
+                                >
+                                    <svg class="icon">
+                                        <use xlink:href="img/icons/sprite.svg#link_icon"></use>
+                                    </svg>
+                                    <span>Live</span>
+                                </a>
                             </div>
                         </li>
                     </ul>
                 </div>
-            </section>
-            <!-- Projects section -->
-            <section class="section projects" id="projects">
-                <div class="container">
-                    <div class="projects__header">
-                        <h2 class="section__title projects__title">Projects</h2>
-                        <div class="glide__arrows" data-glide-el="controls">
-                            <button
-                                type="button"
-                                aria-label="Previous slide"
-                                class="glide__arrow glide__arrow_left"
-                                data-glide-dir="<"
-                            >
-                                <svg class="icon">
-                                    <use xlink:href="img/icons/sprite.svg#arrow_icon"></use>
-                                </svg>
-                            </button>
-                            <button
-                                type="button"
-                                aria-label="Next slide"
-                                class="glide__arrow glide__arrow_right"
-                                data-glide-dir=">"
-                            >
-                                <svg class="icon">
-                                    <use xlink:href="img/icons/sprite.svg#arrow_icon"></use>
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="projects__content">
-                        <div class="glide projects__glide">
-                            <div class="glide__track" data-glide-el="track">
-                                <ul class="projects-list glide__slides">
-                                    <li
-                                        class="projects-list__item project-card glide__slide"
-                                        data-type="landing"
-                                    >
-                                        <div class="project-card__header">
-                                            <picture>
-                                                <source
-                                                    srcset="
-                                                        img/previews/gk-400.webp   400w,
-                                                        img/previews/gk-800.webp   800w,
-                                                        img/previews/gk-1200.webp 1200w
-                                                    "
-                                                    sizes="(max-width: 768px) 400px,
-               (max-width: 1200px) 800px,
-               1200px"
-                                                    type="image/webp"
-                                                />
-                                                <img
-                                                    src="img/previews/gk-800.webp"
-                                                    alt="GK Project"
-                                                    width="400"
-                                                    height="300"
-                                                    loading="lazy"
-                                                />
-                                            </picture>
-                                        </div>
-                                        <div class="project-card__body">
-                                            <p class="project-card__title">GK Landing</p>
-                                            <p class="project-card__desc">
-                                                Switzerland Park residential complex
-                                            </p>
-                                            <div class="project-card__type">
-                                                <span>Type:</span>
-                                                <span>Landing</span>
-                                            </div>
-                                            <div class="project-card__tech-list">
-                                                <span>html</span>
-                                                <span>css</span>
-                                                <span>scss</span>
-                                                <span>js</span>
-                                                <span>gulp</span>
-                                            </div>
-                                        </div>
-                                        <div class="project-card__footer">
-                                            <a
-                                                href="https://github.com/no3utufff89/gk-landing/tree/slider_v2"
-                                                class="project-card__link action-elem"
-                                                target="_blank"
-                                            >
-                                                <svg class="icon">
-                                                    <use
-                                                        xlink:href="img/icons/sprite.svg#git_icon"
-                                                    ></use>
-                                                </svg>
-                                                <span>Code</span>
-                                            </a>
-                                            <a
-                                                href="https://no3utufff89.github.io/gk-landing/"
-                                                class="project-card__link action-elem"
-                                                target="_blank"
-                                            >
-                                                <svg class="icon">
-                                                    <use
-                                                        xlink:href="img/icons/sprite.svg#link_icon"
-                                                    ></use>
-                                                </svg>
-                                                <span>Live</span>
-                                            </a>
-                                        </div>
-                                    </li>
-                                    <li
-                                        class="projects-list__item project-card glide__slide"
-                                        data-type="landing"
-                                    >
-                                        <div class="project-card__header">
-                                            <picture>
-                                                <source
-                                                    srcset="
-                                                        img/previews/rt-400.webp   400w,
-                                                        img/previews/rt-800.webp   800w,
-                                                        img/previews/rt-1200.webp 1200w
-                                                    "
-                                                    sizes="(max-width: 768px) 400px,
-               (max-width: 1200px) 800px,
-               1200px"
-                                                    type="image/webp"
-                                                />
-                                                <img
-                                                    src="img/previews/rt-800.webp"
-                                                    alt="Room Tibet - Landing page for mountain trips"
-                                                    width="400"
-                                                    height="300"
-                                                    loading="lazy"
-                                                />
-                                            </picture>
-                                        </div>
-                                        <div class="project-card__body">
-                                            <p class="project-card__title">Room tibet</p>
-                                            <p class="project-card__desc">
-                                                Landing page for mountain trips
-                                            </p>
-                                            <div class="project-card__type">
-                                                <span>Type:</span>
-                                                <span>Landing</span>
-                                            </div>
-                                            <div class="project-card__tech-list">
-                                                <span>html</span>
-                                                <span>css</span>
-                                                <span>js</span>
-                                                <span>gulp</span>
-                                            </div>
-                                        </div>
-                                        <div class="project-card__footer">
-                                            <a
-                                                href="https://github.com/no3utufff89/RoomTibet-Landing"
-                                                class="project-card__link action-elem"
-                                                target="_blank"
-                                            >
-                                                <svg class="icon">
-                                                    <use
-                                                        xlink:href="img/icons/sprite.svg#git_icon"
-                                                    ></use>
-                                                </svg>
-                                                <span>Code</span>
-                                            </a>
-                                            <a
-                                                href="https://no3utufff89.github.io/RoomTibet-Landing"
-                                                class="project-card__link action-elem"
-                                                target="_blank"
-                                            >
-                                                <svg class="icon">
-                                                    <use
-                                                        xlink:href="img/icons/sprite.svg#link_icon"
-                                                    ></use>
-                                                </svg>
-                                                <span>Live</span>
-                                            </a>
-                                        </div>
-                                    </li>
-                                    <li
-                                        class="projects-list__item project-card glide__slide"
-                                        data-type="landing"
-                                    >
-                                        <div class="project-card__header">
-                                            <picture>
-                                                <source
-                                                    srcset="
-                                                        img/previews/cars-full-preview-400.webp   400w,
-                                                        img/previews/cars-full-preview-800.webp   800w,
-                                                        img/previews/cars-full-preview-1200.webp 1200w
-                                                    "
-                                                    sizes="(max-width: 768px) 400px,
-               (max-width: 1200px) 800px,
-               1200px"
-                                                    type="image/webp"
-                                                />
-                                                <img
-                                                    src="img/previews/cars-full-preview-800.webp"
-                                                    alt="USA Cars For You - Landing page for importing cars from the USA and Canada"
-                                                    width="400"
-                                                    height="300"
-                                                    loading="lazy"
-                                                />
-                                            </picture>
-                                        </div>
-                                        <div class="project-card__body">
-                                            <p class="project-card__title">Usa cars for you</p>
-                                            <p class="project-card__desc">
-                                                Landing page for importing cars from the USA and
-                                                Canada
-                                            </p>
-                                            <div class="project-card__type">
-                                                <span>Type:</span>
-                                                <span>Landing</span>
-                                            </div>
-                                            <div class="project-card__tech-list">
-                                                <span>html</span>
-                                                <span>css</span>
-                                                <span>js</span>
-                                                <span>gulp</span>
-                                            </div>
-                                        </div>
-                                        <div class="project-card__footer">
-                                            <a
-                                                href="https://github.com/no3utufff89/cars_from_usa_landing"
-                                                class="project-card__link action-elem"
-                                                target="_blank"
-                                            >
-                                                <svg class="icon">
-                                                    <use
-                                                        xlink:href="img/icons/sprite.svg#git_icon"
-                                                    ></use>
-                                                </svg>
-                                                <span>Code</span>
-                                            </a>
-                                            <a
-                                                href="https://no3utufff89.github.io/cars_from_usa_landing/"
-                                                class="project-card__link action-elem"
-                                                target="_blank"
-                                            >
-                                                <svg class="icon">
-                                                    <use
-                                                        xlink:href="img/icons/sprite.svg#link_icon"
-                                                    ></use>
-                                                </svg>
-                                                <span>Live</span>
-                                            </a>
-                                        </div>
-                                    </li>
-                                    <li
-                                        class="projects-list__item project-card glide__slide"
-                                        data-type="landing"
-                                    >
-                                        <div class="project-card__header">
-                                            <picture>
-                                                <source
-                                                    srcset="
-                                                        img/previews/tank-400.webp   400w,
-                                                        img/previews/tank-800.webp   800w,
-                                                        img/previews/tank-1200.webp 1200w
-                                                    "
-                                                    sizes="(max-width: 768px) 400px,
-               (max-width: 1200px) 800px,
-               1200px"
-                                                    type="image/webp"
-                                                />
-                                                <img
-                                                    src="img/previews/tank-800.webp"
-                                                    alt="Car Showroom - Landing page for the Tank car dealership"
-                                                    width="400"
-                                                    height="300"
-                                                    loading="lazy"
-                                                />
-                                            </picture>
-                                        </div>
-                                        <div class="project-card__body">
-                                            <p class="project-card__title">Car showroom</p>
-                                            <p class="project-card__desc">
-                                                Landing page for the Tank car dealership
-                                            </p>
-                                            <div class="project-card__type">
-                                                <span>Type:</span>
-                                                <span>Landing</span>
-                                            </div>
-                                            <div class="project-card__tech-list">
-                                                <span>html</span>
-                                                <span>css</span>
-                                                <span>js</span>
-                                                <span>gulp</span>
-                                            </div>
-                                        </div>
-                                        <div class="project-card__footer">
-                                            <a
-                                                href="https://github.com/no3utufff89/Tank_landing"
-                                                class="project-card__link action-elem"
-                                                target="_blank"
-                                            >
-                                                <svg class="icon">
-                                                    <use
-                                                        xlink:href="img/icons/sprite.svg#git_icon"
-                                                    ></use>
-                                                </svg>
-                                                <span>Code</span>
-                                            </a>
-                                            <a
-                                                href="https://no3utufff89.github.io/Tank_landing/"
-                                                class="project-card__link action-elem"
-                                                target="_blank"
-                                            >
-                                                <svg class="icon">
-                                                    <use
-                                                        xlink:href="img/icons/sprite.svg#link_icon"
-                                                    ></use>
-                                                </svg>
-                                                <span>Live</span>
-                                            </a>
-                                        </div>
-                                    </li>
-                                    <li
-                                        class="projects-list__item project-card glide__slide"
-                                        data-type="game"
-                                    >
-                                        <div class="project-card__header">
-                                            <picture>
-                                                <source
-                                                    srcset="
-                                                        img/previews/MemoryGame-400.webp   400w,
-                                                        img/previews/MemoryGame-800.webp   800w,
-                                                        img/previews/MemoryGame-1200.webp 1200w
-                                                    "
-                                                    sizes="(max-width: 768px) 400px,
-               (max-width: 1200px) 800px,
-               1200px"
-                                                    type="image/webp"
-                                                />
-                                                <img
-                                                    src="img/previews/MemoryGame-800.webp"
-                                                    alt="Memory Game - JavaScript cards matching game"
-                                                    width="400"
-                                                    height="300"
-                                                    loading="lazy"
-                                                />
-                                            </picture>
-                                        </div>
-                                        <div class="project-card__body">
-                                            <p class="project-card__title">Memory game</p>
-                                            <p class="project-card__desc">JavaScipt cards game</p>
-                                            <div class="project-card__type">
-                                                <span>Type:</span>
-                                                <span>Game</span>
-                                            </div>
-                                            <div class="project-card__tech-list">
-                                                <span>html</span>
-                                                <span>css</span>
-                                                <span>js</span>
-                                            </div>
-                                        </div>
-                                        <div class="project-card__footer">
-                                            <a
-                                                href="https://github.com/no3utufff89/MemoryGame"
-                                                class="project-card__link action-elem"
-                                                target="_blank"
-                                            >
-                                                <svg class="icon">
-                                                    <use
-                                                        xlink:href="img/icons/sprite.svg#git_icon"
-                                                    ></use>
-                                                </svg>
-                                                <span>Code</span>
-                                            </a>
-                                            <a
-                                                href="https://memory-game-mu-khaki-30.vercel.app/"
-                                                class="project-card__link action-elem"
-                                                target="_blank"
-                                            >
-                                                <svg class="icon">
-                                                    <use
-                                                        xlink:href="img/icons/sprite.svg#link_icon"
-                                                    ></use>
-                                                </svg>
-                                                <span>Live</span>
-                                            </a>
-                                        </div>
-                                    </li>
-                                    <li
-                                        class="projects-list__item project-card glide__slide"
-                                        data-type="other"
-                                    >
-                                        <div class="project-card__header">
-                                            <picture>
-                                                <source
-                                                    srcset="
-                                                        img/previews/Todo-400.webp   400w,
-                                                        img/previews/Todo-800.webp   800w,
-                                                        img/previews/Todo-1200.webp 1200w
-                                                    "
-                                                    sizes="(max-width: 768px) 400px,
-               (max-width: 1200px) 800px,
-               1200px"
-                                                    type="image/webp"
-                                                />
-                                                <img
-                                                    src="img/previews/Todo-800.webp"
-                                                    alt="React Todo List - TypeScript task management application"
-                                                    width="400"
-                                                    height="300"
-                                                    loading="lazy"
-                                                />
-                                            </picture>
-                                        </div>
-                                        <div class="project-card__body">
-                                            <p class="project-card__title">React ToDo list</p>
-                                            <p class="project-card__desc">TypeScript ToDo list</p>
-                                            <div class="project-card__type">
-                                                <span>Type:</span>
-                                                <span>Other</span>
-                                            </div>
-                                            <div class="project-card__tech-list">
-                                                <span>html</span>
-                                                <span>css</span>
-                                                <span>ts</span>
-                                                <span>react</span>
-                                                <span>redux</span>
-                                            </div>
-                                        </div>
-                                        <div class="project-card__footer">
-                                            <a
-                                                href="https://github.com/no3utufff89/ToDoApp"
-                                                class="project-card__link action-elem"
-                                                target="_blank"
-                                            >
-                                                <svg class="icon">
-                                                    <use
-                                                        xlink:href="img/icons/sprite.svg#git_icon"
-                                                    ></use>
-                                                </svg>
-                                                <span>Code</span>
-                                            </a>
-                                            <a
-                                                href="https://to-do-app-inky-pi.vercel.app"
-                                                class="project-card__link action-elem"
-                                                target="_blank"
-                                            >
-                                                <svg class="icon">
-                                                    <use
-                                                        xlink:href="img/icons/sprite.svg#link_icon"
-                                                    ></use>
-                                                </svg>
-                                                <span>Live</span>
-                                            </a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="glide__bullets" data-glide-el="controls[nav]">
-                                <button
-                                    type="button"
-                                    class="glide__bullet"
-                                    data-glide-dir="=0"
-                                ></button>
-                                <button
-                                    type="button"
-                                    class="glide__bullet"
-                                    data-glide-dir="=1"
-                                ></button>
-                                <button
-                                    type="button"
-                                    class="glide__bullet"
-                                    data-glide-dir="=2"
-                                ></button>
-                                <button
-                                    type="button"
-                                    class="glide__bullet"
-                                    data-glide-dir="=3"
-                                ></button>
-                                <button
-                                    type="button"
-                                    class="glide__bullet"
-                                    data-glide-dir="=4"
-                                ></button>
-                                <button
-                                    type="button"
-                                    class="glide__bullet"
-                                    data-glide-dir="=5"
-                                ></button>
-                            </div>
-                        </div>
-                    </div>
+                <div class="glide__bullets" data-glide-el="controls[nav]">
+                    <button type="button" class="glide__bullet" data-glide-dir="=0"></button>
+                    <button type="button" class="glide__bullet" data-glide-dir="=1"></button>
+                    <button type="button" class="glide__bullet" data-glide-dir="=2"></button>
+                    <button type="button" class="glide__bullet" data-glide-dir="=3"></button>
+                    <button type="button" class="glide__bullet" data-glide-dir="=4"></button>
+                    <button type="button" class="glide__bullet" data-glide-dir="=5"></button>
                 </div>
-            </section>
+            </div>
+        </div>
+    </div>
+</section>
 
-            <!-- Contacts section -->
-            <section class="section contacts" id="contacts">
-                <div class="container">
-                    <div class="glow contacts__glow"></div>
-                    <h2 class="section__title contacts__title">Contacts</h2>
-                    <div class="contacts__content">
-                        <div class="contacts__info">
-                            <p class="text contacts__text">
-                                I am always open to discussing new projects and opportunities for
-                                collaboration.
-                            </p>
-                            <p class="text contacts__text">Just write to me on Telegram</p>
-                        </div>
-                        <div class="contacts__links">
-                            <a
-                                href="https://github.com/no3utufff89"
-                                class="action-elem"
-                                target="_blank"
-                            >
-                                <svg class="icon">
-                                    <use xlink:href="img/icons/sprite.svg#git_icon"></use>
-                                </svg>
-                            </a>
-                            <a href="https://t.me/no3utufff" class="action-elem" target="_blank">
-                                <svg class="icon">
-                                    <use xlink:href="img/icons/sprite.svg#tg_icon"></use>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
+    <!-- Contacts section -->
+<section class="section contacts" id="contacts">
+    <div class="container">
+        <div class="glow contacts__glow"></div>
+        <h2 class="section__title contacts__title">Contacts</h2>
+        <div class="contacts__content">
+            <div class="contacts__info">
+                <p class="text contacts__text">
+                    I am always open to discussing new projects and opportunities for collaboration.
+                </p>
+                <p class="text contacts__text">Just write to me on Telegram</p>
+            </div>
+            <div class="contacts__links">
+                <a href="https://github.com/no3utufff89" class="action-elem" target="_blank">
+                    <svg class="icon">
+                        <use xlink:href="img/icons/sprite.svg#git_icon"></use>
+                    </svg>
+                </a>
+                <a href="https://t.me/no3utufff" class="action-elem" target="_blank">
+                    <svg class="icon">
+                        <use xlink:href="img/icons/sprite.svg#tg_icon"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
 
         <div class="overlay"></div>
         <div class="mobile-menu">
