@@ -7,9 +7,7 @@ window.addEventListener('load', function () {
     functions.isWebp();
     // functions.preventClickDefault($('form'));
 });
-window.addEventListener('DOMContentLoaded', function () {
-    const projectsSlider = projectsGlide();
-});
+
 window.addEventListener('resize', function () {
     clearTimeout(window.resizedFinished);
     window.resizedFinished = setTimeout(function () {}, 100);
@@ -34,5 +32,10 @@ window.addEventListener(
 );
 document.addEventListener('DOMContentLoaded', () => {
     initHeroAnimation();
+    setTimeout(() => {
+        if (document.getElementById('projects')) {
+            const projectsSlider = projectsGlide();
+        }
+    }, 1000);
     controls.mobileMenuControl();
 });
