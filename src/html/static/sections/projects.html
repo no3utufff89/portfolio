@@ -4,12 +4,22 @@
         <div class="projects__header">
             <h2 class="section__title projects__title">Projects</h2>
             <div class="glide__arrows" data-glide-el="controls">
-                <button class="glide__arrow glide__arrow_left" data-glide-dir="<">
+                <button
+                    type="button"
+                    aria-label="Previous slide"
+                    class="glide__arrow glide__arrow_left"
+                    data-glide-dir="<"
+                >
                     <svg class="icon">
                         <use xlink:href="@img/icons/sprite.svg#arrow_icon"></use>
                     </svg>
                 </button>
-                <button class="glide__arrow glide__arrow_right" data-glide-dir=">">
+                <button
+                    type="button"
+                    aria-label="Next slide"
+                    class="glide__arrow glide__arrow_right"
+                    data-glide-dir=">"
+                >
                     <svg class="icon">
                         <use xlink:href="@img/icons/sprite.svg#arrow_icon"></use>
                     </svg>
@@ -25,7 +35,26 @@
                             data-type="landing"
                         >
                             <div class="project-card__header">
-                                <img src="@img/previews/gk.png" alt="" />
+                                <picture>
+                                    <source
+                                        srcset="
+                                            img/previews/gk-400.webp   400w,
+                                            img/previews/gk-800.webp   800w,
+                                            img/previews/gk-1200.webp 1200w
+                                        "
+                                        sizes="(max-width: 768px) 400px,
+               (max-width: 1200px) 800px,
+               1200px"
+                                        type="image/webp"
+                                    />
+                                    <img
+                                        src="img/previews/gk-800.webp"
+                                        alt="GK Project"
+                                        width="400"
+                                        height="300"
+                                        loading="lazy"
+                                    />
+                                </picture>
                             </div>
                             <div class="project-card__body">
                                 <p class="project-card__title">GK Landing</p>
@@ -72,7 +101,26 @@
                             data-type="landing"
                         >
                             <div class="project-card__header">
-                                <img src="@img/previews/rt.png" alt="" />
+                                <picture>
+                                    <source
+                                        srcset="
+                                            img/previews/rt-400.webp   400w,
+                                            img/previews/rt-800.webp   800w,
+                                            img/previews/rt-1200.webp 1200w
+                                        "
+                                        sizes="(max-width: 768px) 400px,
+               (max-width: 1200px) 800px,
+               1200px"
+                                        type="image/webp"
+                                    />
+                                    <img
+                                        src="img/previews/rt-800.webp"
+                                        alt="Room Tibet - Landing page for mountain trips"
+                                        width="400"
+                                        height="300"
+                                        loading="lazy"
+                                    />
+                                </picture>
                             </div>
                             <div class="project-card__body">
                                 <p class="project-card__title">Room tibet</p>
@@ -116,7 +164,26 @@
                             data-type="landing"
                         >
                             <div class="project-card__header">
-                                <img src="@img/previews/cars-full-preview.png" alt="" />
+                                <picture>
+                                    <source
+                                        srcset="
+                                            img/previews/cars-full-preview-400.webp   400w,
+                                            img/previews/cars-full-preview-800.webp   800w,
+                                            img/previews/cars-full-preview-1200.webp 1200w
+                                        "
+                                        sizes="(max-width: 768px) 400px,
+               (max-width: 1200px) 800px,
+               1200px"
+                                        type="image/webp"
+                                    />
+                                    <img
+                                        src="img/previews/cars-full-preview-800.webp"
+                                        alt="USA Cars For You - Landing page for importing cars from the USA and Canada"
+                                        width="400"
+                                        height="300"
+                                        loading="lazy"
+                                    />
+                                </picture>
                             </div>
                             <div class="project-card__body">
                                 <p class="project-card__title">Usa cars for you</p>
@@ -162,7 +229,26 @@
                             data-type="landing"
                         >
                             <div class="project-card__header">
-                                <img src="@img/previews/tank.png" alt="" />
+                                <picture>
+                                    <source
+                                        srcset="
+                                            img/previews/tank-400.webp   400w,
+                                            img/previews/tank-800.webp   800w,
+                                            img/previews/tank-1200.webp 1200w
+                                        "
+                                        sizes="(max-width: 768px) 400px,
+               (max-width: 1200px) 800px,
+               1200px"
+                                        type="image/webp"
+                                    />
+                                    <img
+                                        src="img/previews/tank-800.webp"
+                                        alt="Car Showroom - Landing page for the Tank car dealership"
+                                        width="400"
+                                        height="300"
+                                        loading="lazy"
+                                    />
+                                </picture>
                             </div>
                             <div class="project-card__body">
                                 <p class="project-card__title">Car showroom</p>
@@ -205,7 +291,26 @@
                         </li>
                         <li class="projects-list__item project-card glide__slide" data-type="game">
                             <div class="project-card__header">
-                                <img src="@img/previews/MemoryGame.png" alt="" />
+                                <picture>
+                                    <source
+                                        srcset="
+                                            img/previews/MemoryGame-400.webp   400w,
+                                            img/previews/MemoryGame-800.webp   800w,
+                                            img/previews/MemoryGame-1200.webp 1200w
+                                        "
+                                        sizes="(max-width: 768px) 400px,
+               (max-width: 1200px) 800px,
+               1200px"
+                                        type="image/webp"
+                                    />
+                                    <img
+                                        src="img/previews/MemoryGame-800.webp"
+                                        alt="Memory Game - JavaScript cards matching game"
+                                        width="400"
+                                        height="300"
+                                        loading="lazy"
+                                    />
+                                </picture>
                             </div>
                             <div class="project-card__body">
                                 <p class="project-card__title">Memory game</p>
@@ -245,7 +350,26 @@
                         </li>
                         <li class="projects-list__item project-card glide__slide" data-type="other">
                             <div class="project-card__header">
-                                <img src="@img/previews/Todo.png" alt="" />
+                                <picture>
+                                    <source
+                                        srcset="
+                                            img/previews/Todo-400.webp   400w,
+                                            img/previews/Todo-800.webp   800w,
+                                            img/previews/Todo-1200.webp 1200w
+                                        "
+                                        sizes="(max-width: 768px) 400px,
+               (max-width: 1200px) 800px,
+               1200px"
+                                        type="image/webp"
+                                    />
+                                    <img
+                                        src="img/previews/Todo-800.webp"
+                                        alt="React Todo List - TypeScript task management application"
+                                        width="400"
+                                        height="300"
+                                        loading="lazy"
+                                    />
+                                </picture>
                             </div>
                             <div class="project-card__body">
                                 <p class="project-card__title">React ToDo list</p>
@@ -288,12 +412,12 @@
                     </ul>
                 </div>
                 <div class="glide__bullets" data-glide-el="controls[nav]">
-                    <button class="glide__bullet" data-glide-dir="=0"></button>
-                    <button class="glide__bullet" data-glide-dir="=1"></button>
-                    <button class="glide__bullet" data-glide-dir="=2"></button>
-                    <button class="glide__bullet" data-glide-dir="=3"></button>
-                    <button class="glide__bullet" data-glide-dir="=4"></button>
-                    <button class="glide__bullet" data-glide-dir="=5"></button>
+                    <button type="button" class="glide__bullet" data-glide-dir="=0"></button>
+                    <button type="button" class="glide__bullet" data-glide-dir="=1"></button>
+                    <button type="button" class="glide__bullet" data-glide-dir="=2"></button>
+                    <button type="button" class="glide__bullet" data-glide-dir="=3"></button>
+                    <button type="button" class="glide__bullet" data-glide-dir="=4"></button>
+                    <button type="button" class="glide__bullet" data-glide-dir="=5"></button>
                 </div>
             </div>
         </div>

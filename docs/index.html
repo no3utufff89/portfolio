@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,7 +10,6 @@
         <link rel="apple-touch-icon" sizes="180x180" href="files/favicon-180x180.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="files/favicon-32x32.png" />
         <link rel="shortcut icon" href="files/favicon.ico" />
-        <link rel="preload" href="img/hero.webp" as="image" />
         <link
             rel="preload"
             href="fonts/Poppins/Poppins-300.woff2"
@@ -39,7 +38,6 @@
             type="font/woff2"
             crossorigin
         />
-
         <link
             rel="preload"
             href="fonts/Poppins/Poppins-700.woff2"
@@ -47,19 +45,30 @@
             type="font/woff2"
             crossorigin
         />
-
+        <link rel="preload" href="img/hero-800.webp" as="image" type="image/webp" />
         <link
             rel="preload"
-            href="fonts/Poppins/Poppins-800.woff2"
-            as="font"
-            type="font/woff2"
-            crossorigin
+            href="img/hero-1200.webp"
+            as="image"
+            type="image/webp"
+            media="(min-width: 1201px)"
         />
-
-        <meta property="og:title" content="Project title here" />
-        <meta property="og:description" content="Project description here" />
-        <link rel="stylesheet" href="css/style.min.css?_v=20251103160344" />
-        <script type="module" src="js/app.js?_v=20251103160344"></script>
+        <link
+            rel="preload"
+            href="img/hero-400.webp"
+            as="image"
+            type="image/webp"
+            media="(max-width: 768px)"
+        />
+        <link rel="preload" href="img/circle.svg" as="image" type="image/svg+xml" />
+        <link rel="preload" href="img/react.svg" as="image" type="image/svg+xml" />
+        <link rel="preload" href="img/css.svg" as="image" type="image/svg+xml" />
+        <link rel="preload" href="img/html.svg" as="image" type="image/svg+xml" />
+        <link rel="preload" href="img/figma.svg" as="image" type="image/svg+xml" />
+        <meta property="og:title" content="Leonid Kazinsky Personal Page" />
+        <meta property="og:description" content="Leonid Kazinsky Personal Portfolio Page" />
+        <link rel="stylesheet" href="css/style.min.css?_v=20251104222500" />
+        <script type="module" src="js/app.js?_v=20251104222500"></script>
 
         <title>Главная - Leonid Kazinsky Personal Page</title>
     </head>
@@ -135,15 +144,25 @@
                     <div class="hero__images">
                         <div class="hero__image">
                             <picture>
-                                <source srcset="img/hero.webp" type="image/webp" />
+                                <source
+                                    srcset="
+                                        img/hero-400.webp   400w,
+                                        img/hero-800.webp   800w,
+                                        img/hero-1200.webp 1200w
+                                    "
+                                    sizes="(max-width: 768px) 400px,
+                   (max-width: 1200px) 800px,
+                   1200px"
+                                    type="image/webp"
+                                />
                                 <img
-                                    src="img/hero.png"
-                                    alt="hero image"
+                                    src="img/hero-800.webp"
+                                    alt="Leonid Kazinsky"
                                     width="718"
                                     height="561"
-                                    loading="lazy"
-                                    data-src="img/hero.png"
-                            /></picture>
+                                    loading="eager"
+                                />
+                            </picture>
                         </div>
                         <img
                             class="hero__circle-image hero-decor-item"
@@ -184,7 +203,12 @@
                         <div class="about__image">
                             <picture
                                 ><source srcset="img/about_01.webp" type="image/webp" />
-                                <img src="img/about_01.png" alt="" loading="lazy"
+                                <img
+                                    src="img/about_01.png"
+                                    alt=""
+                                    loading="lazy"
+                                    width="660"
+                                    height="380"
                             /></picture>
                         </div>
                         <div class="about__text-block">
@@ -345,12 +369,22 @@
                     <div class="projects__header">
                         <h2 class="section__title projects__title">Projects</h2>
                         <div class="glide__arrows" data-glide-el="controls">
-                            <button class="glide__arrow glide__arrow_left" data-glide-dir="<">
+                            <button
+                                type="button"
+                                aria-label="Previous slide"
+                                class="glide__arrow glide__arrow_left"
+                                data-glide-dir="<"
+                            >
                                 <svg class="icon">
                                     <use xlink:href="img/icons/sprite.svg#arrow_icon"></use>
                                 </svg>
                             </button>
-                            <button class="glide__arrow glide__arrow_right" data-glide-dir=">">
+                            <button
+                                type="button"
+                                aria-label="Next slide"
+                                class="glide__arrow glide__arrow_right"
+                                data-glide-dir=">"
+                            >
                                 <svg class="icon">
                                     <use xlink:href="img/icons/sprite.svg#arrow_icon"></use>
                                 </svg>
@@ -366,12 +400,26 @@
                                         data-type="landing"
                                     >
                                         <div class="project-card__header">
-                                            <picture
-                                                ><source
-                                                    srcset="img/previews/gk.webp"
-                                                    type="image/webp" />
-                                                <img src="img/previews/gk.png" alt=""
-                                            /></picture>
+                                            <picture>
+                                                <source
+                                                    srcset="
+                                                        img/previews/gk-400.webp   400w,
+                                                        img/previews/gk-800.webp   800w,
+                                                        img/previews/gk-1200.webp 1200w
+                                                    "
+                                                    sizes="(max-width: 768px) 400px,
+               (max-width: 1200px) 800px,
+               1200px"
+                                                    type="image/webp"
+                                                />
+                                                <img
+                                                    src="img/previews/gk-800.webp"
+                                                    alt="GK Project"
+                                                    width="400"
+                                                    height="300"
+                                                    loading="lazy"
+                                                />
+                                            </picture>
                                         </div>
                                         <div class="project-card__body">
                                             <p class="project-card__title">GK Landing</p>
@@ -422,12 +470,26 @@
                                         data-type="landing"
                                     >
                                         <div class="project-card__header">
-                                            <picture
-                                                ><source
-                                                    srcset="img/previews/rt.webp"
-                                                    type="image/webp" />
-                                                <img src="img/previews/rt.png" alt=""
-                                            /></picture>
+                                            <picture>
+                                                <source
+                                                    srcset="
+                                                        img/previews/rt-400.webp   400w,
+                                                        img/previews/rt-800.webp   800w,
+                                                        img/previews/rt-1200.webp 1200w
+                                                    "
+                                                    sizes="(max-width: 768px) 400px,
+               (max-width: 1200px) 800px,
+               1200px"
+                                                    type="image/webp"
+                                                />
+                                                <img
+                                                    src="img/previews/rt-800.webp"
+                                                    alt="Room Tibet - Landing page for mountain trips"
+                                                    width="400"
+                                                    height="300"
+                                                    loading="lazy"
+                                                />
+                                            </picture>
                                         </div>
                                         <div class="project-card__body">
                                             <p class="project-card__title">Room tibet</p>
@@ -477,14 +539,26 @@
                                         data-type="landing"
                                     >
                                         <div class="project-card__header">
-                                            <picture
-                                                ><source
-                                                    srcset="img/previews/cars-full-preview.webp"
-                                                    type="image/webp" />
+                                            <picture>
+                                                <source
+                                                    srcset="
+                                                        img/previews/cars-full-preview-400.webp   400w,
+                                                        img/previews/cars-full-preview-800.webp   800w,
+                                                        img/previews/cars-full-preview-1200.webp 1200w
+                                                    "
+                                                    sizes="(max-width: 768px) 400px,
+               (max-width: 1200px) 800px,
+               1200px"
+                                                    type="image/webp"
+                                                />
                                                 <img
-                                                    src="img/previews/cars-full-preview.png"
-                                                    alt=""
-                                            /></picture>
+                                                    src="img/previews/cars-full-preview-800.webp"
+                                                    alt="USA Cars For You - Landing page for importing cars from the USA and Canada"
+                                                    width="400"
+                                                    height="300"
+                                                    loading="lazy"
+                                                />
+                                            </picture>
                                         </div>
                                         <div class="project-card__body">
                                             <p class="project-card__title">Usa cars for you</p>
@@ -535,12 +609,26 @@
                                         data-type="landing"
                                     >
                                         <div class="project-card__header">
-                                            <picture
-                                                ><source
-                                                    srcset="img/previews/tank.webp"
-                                                    type="image/webp" />
-                                                <img src="img/previews/tank.png" alt=""
-                                            /></picture>
+                                            <picture>
+                                                <source
+                                                    srcset="
+                                                        img/previews/tank-400.webp   400w,
+                                                        img/previews/tank-800.webp   800w,
+                                                        img/previews/tank-1200.webp 1200w
+                                                    "
+                                                    sizes="(max-width: 768px) 400px,
+               (max-width: 1200px) 800px,
+               1200px"
+                                                    type="image/webp"
+                                                />
+                                                <img
+                                                    src="img/previews/tank-800.webp"
+                                                    alt="Car Showroom - Landing page for the Tank car dealership"
+                                                    width="400"
+                                                    height="300"
+                                                    loading="lazy"
+                                                />
+                                            </picture>
                                         </div>
                                         <div class="project-card__body">
                                             <p class="project-card__title">Car showroom</p>
@@ -590,12 +678,26 @@
                                         data-type="game"
                                     >
                                         <div class="project-card__header">
-                                            <picture
-                                                ><source
-                                                    srcset="img/previews/MemoryGame.webp"
-                                                    type="image/webp" />
-                                                <img src="img/previews/MemoryGame.png" alt=""
-                                            /></picture>
+                                            <picture>
+                                                <source
+                                                    srcset="
+                                                        img/previews/MemoryGame-400.webp   400w,
+                                                        img/previews/MemoryGame-800.webp   800w,
+                                                        img/previews/MemoryGame-1200.webp 1200w
+                                                    "
+                                                    sizes="(max-width: 768px) 400px,
+               (max-width: 1200px) 800px,
+               1200px"
+                                                    type="image/webp"
+                                                />
+                                                <img
+                                                    src="img/previews/MemoryGame-800.webp"
+                                                    alt="Memory Game - JavaScript cards matching game"
+                                                    width="400"
+                                                    height="300"
+                                                    loading="lazy"
+                                                />
+                                            </picture>
                                         </div>
                                         <div class="project-card__body">
                                             <p class="project-card__title">Memory game</p>
@@ -642,12 +744,26 @@
                                         data-type="other"
                                     >
                                         <div class="project-card__header">
-                                            <picture
-                                                ><source
-                                                    srcset="img/previews/Todo.webp"
-                                                    type="image/webp" />
-                                                <img src="img/previews/Todo.png" alt=""
-                                            /></picture>
+                                            <picture>
+                                                <source
+                                                    srcset="
+                                                        img/previews/Todo-400.webp   400w,
+                                                        img/previews/Todo-800.webp   800w,
+                                                        img/previews/Todo-1200.webp 1200w
+                                                    "
+                                                    sizes="(max-width: 768px) 400px,
+               (max-width: 1200px) 800px,
+               1200px"
+                                                    type="image/webp"
+                                                />
+                                                <img
+                                                    src="img/previews/Todo-800.webp"
+                                                    alt="React Todo List - TypeScript task management application"
+                                                    width="400"
+                                                    height="300"
+                                                    loading="lazy"
+                                                />
+                                            </picture>
                                         </div>
                                         <div class="project-card__body">
                                             <p class="project-card__title">React ToDo list</p>
@@ -694,12 +810,36 @@
                                 </ul>
                             </div>
                             <div class="glide__bullets" data-glide-el="controls[nav]">
-                                <button class="glide__bullet" data-glide-dir="=0"></button>
-                                <button class="glide__bullet" data-glide-dir="=1"></button>
-                                <button class="glide__bullet" data-glide-dir="=2"></button>
-                                <button class="glide__bullet" data-glide-dir="=3"></button>
-                                <button class="glide__bullet" data-glide-dir="=4"></button>
-                                <button class="glide__bullet" data-glide-dir="=5"></button>
+                                <button
+                                    type="button"
+                                    class="glide__bullet"
+                                    data-glide-dir="=0"
+                                ></button>
+                                <button
+                                    type="button"
+                                    class="glide__bullet"
+                                    data-glide-dir="=1"
+                                ></button>
+                                <button
+                                    type="button"
+                                    class="glide__bullet"
+                                    data-glide-dir="=2"
+                                ></button>
+                                <button
+                                    type="button"
+                                    class="glide__bullet"
+                                    data-glide-dir="=3"
+                                ></button>
+                                <button
+                                    type="button"
+                                    class="glide__bullet"
+                                    data-glide-dir="=4"
+                                ></button>
+                                <button
+                                    type="button"
+                                    class="glide__bullet"
+                                    data-glide-dir="=5"
+                                ></button>
                             </div>
                         </div>
                     </div>

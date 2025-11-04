@@ -1,0 +1,84 @@
+.contacts {
+  position: relative;
+}
+
+.contacts__title {
+  margin-bottom: 60px;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+}
+
+.contacts__content {
+  border-radius: 8px;
+  border: 1px solid #f1662a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25px;
+  position: relative;
+  z-index: 2;
+}
+
+.contacts__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 40px;
+}
+
+.contacts__glow {
+  width: 415px;
+  height: 492px;
+  position: absolute;
+  left: -235px;
+  bottom: 0;
+}
+
+.contacts__text {
+  font-size: 30px;
+  font-weight: 500;
+  text-wrap: balance;
+  line-height: 140%;
+  max-width: 50%;
+  text-wrap: balance;
+}
+
+.contacts__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 50px;
+     -moz-column-gap: 50px;
+          column-gap: 50px;
+}
+
+.contacts__links a {
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+
+@media (max-width: 980px) {
+  .contacts__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 40px;
+  }
+  .contacts__text {
+    max-width: none;
+    text-align: center;
+  }
+}
