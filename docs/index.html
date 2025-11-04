@@ -71,12 +71,12 @@
 
     <link
         rel="preload"
-        href="css/style.css?_v=20251104233511"
+        href="css/style.css?_v=20251104235614"
         as="style"
         onload="this.onload=null;this.rel='stylesheet'"
     />
-    <noscript><link rel="stylesheet" href="css/style.css?_v=20251104233511" /></noscript>
-    <script type="module" src="js/app.js?_v=20251104233511" defer></script>
+    <noscript><link rel="stylesheet" href="css/style.css?_v=20251104235614" /></noscript>
+    <script type="module" src="js/app.js?_v=20251104235614" defer></script>
 
     <title>Главная - Leonid Kazinsky Personal Page</title>
 </head>
@@ -108,7 +108,13 @@
                     </li>
                 </ul>
             </nav>
-            <button class="nav-btn" aria-label="mobile menu button">
+            <button
+                class="nav-btn"
+                aria-label="Open menu"
+                aria-expanded="false"
+                aria-controls="mobile-menu"
+                id="menu-button"
+            >
                 <span class="nav-btn__line"></span>
             </button>
         </div>
@@ -805,7 +811,13 @@
 </main>
 
         <div class="overlay"></div>
-        <div class="mobile-menu">
+        <div
+            class="mobile-menu"
+            id="mobile-menu"
+            aria-labelledby="menu-button"
+            aria-hidden="true"
+            role="navigation"
+        >
             <ul class="mobile-menu__list">
                 <li class="mobile-menu__item">
                     <a href="#hero" class="mobile-menu__link">Home</a>

@@ -88,7 +88,10 @@
             background: linear-gradient(90deg, transparent, $orange, transparent);
             transition: left 0.4s ease;
         }
-
+        &:focus {
+            color: #f1662a;
+            transform: translateY(-2px);
+        }
         &:hover {
             color: #ffffff;
             transform: translateY(-1px);

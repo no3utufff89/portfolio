@@ -4,7 +4,13 @@
     <body>
         @@include('html/static/header.html') @@include('html/main.html')
         <div class="overlay"></div>
-        <div class="mobile-menu">
+        <div
+            class="mobile-menu"
+            id="mobile-menu"
+            aria-labelledby="menu-button"
+            aria-hidden="true"
+            role="navigation"
+        >
             <ul class="mobile-menu__list">
                 <li class="mobile-menu__item">
                     <a href="#hero" class="mobile-menu__link">Home</a>
