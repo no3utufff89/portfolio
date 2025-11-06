@@ -23,6 +23,15 @@
             row-gap: 25px;
         }
     }
+    &__action-element {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+        user-select: none;
+    }
     &__images {
         grid-column: 7/13;
         position: relative;

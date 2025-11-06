@@ -49,3 +49,13 @@
     outline: 2px solid #f1662a;
     outline-offset: 2px;
 }
+.action-elem * {
+    pointer-events: none !important;
+}
+@include tablet {
+    a[href='#projects'] {
+        pointer-events: auto !important;
+        -webkit-user-select: auto !important;
+        user-select: auto !important;
+    }
+}
