@@ -179,9 +179,9 @@
             z-index: 99999999;
         }
         .action-elem:first-of-type {
-            margin-right: 15px;
+            margin-left: 15px;
             @include tablet {
-                margin-right: 7px;
+                margin-left: 7px;
             }
         }
     }
