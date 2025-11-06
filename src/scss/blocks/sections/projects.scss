@@ -2,10 +2,23 @@
 
 .projects {
     min-height: 100vh;
-    display: flex;
-    align-items: center;
-    position: relative;
 
+    align-items: center;
+
+    display: flex !important;
+    position: relative !important;
+
+    /* КРИТИЧЕСКИ ВАЖНО для якорных ссылок */
+    scroll-margin-top: 80px !important;
+    scroll-snap-margin-top: 80px !important; /* Для старых браузеров */
+
+    /* Гарантируем что блок занимает место */
+    min-height: 100vh !important;
+    width: 100% !important;
+    @include tablet {
+        scroll-margin-top: 60px !important;
+        scroll-snap-margin-top: 60px !important;
+    }
     &:after {
         position: absolute;
         top: 0;
