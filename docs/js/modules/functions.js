@@ -29,15 +29,3 @@ export function debounce(func, delay) {
         }, delay);
     };
 }
-export function enableFixedBody(target) {
-    document.body.classList.add('no-scroll');
-    setTimeout(() => {
-        target.classList.add('active');
-    }, 10);
-}
-export function disableFixedBody(delay, target) {
-    document.body.classList.remove('no-scroll');
-    setTimeout(() => {
-        target.classList.remove('active');
-    }, delay);
-}

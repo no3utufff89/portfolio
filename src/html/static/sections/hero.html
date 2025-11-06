@@ -29,33 +29,32 @@
         <div class="hero__images">
             <div class="hero__image">
                 <picture>
-                    <!-- Мобильные устройства (до 768px) -->
                     <source
                         srcset="img/hero-mobile.webp"
+                        media="(max-width: 425px)"
+                        type="image/webp"
+                    />
+                    <source
+                        srcset="img/hero-600.webp"
                         media="(max-width: 768px)"
                         type="image/webp"
                     />
-                    <!-- Планшеты (769px - 1200px) -->
-                    <source
-                        srcset="img/hero-600.webp"
-                        media="(min-width: 769px) and (max-width: 1200px)"
-                        type="image/webp"
-                    />
-                    <!-- Десктоп (1201px+) -->
                     <source
                         srcset="img/hero-800.webp"
-                        media="(min-width: 1201px)"
+                        media="(max-width: 1200px)"
                         type="image/webp"
                     />
-                    <!-- Fallback -->
+                    <source
+                        srcset="img/hero-1200.webp"
+                        media="(min-width:1200px)"
+                        type="image/webp"
+                    />
                     <img
-                        src="img/hero-600.webp"
+                        src="img/hero.png"
                         alt="Leonid Kazinsky - Frontend Developer"
-                        width="718"
-                        height="561"
-                        style="aspect-ratio: 718/561"
+                        width="768"
+                        height="600"
                         loading="eager"
-                        decoding="async"
                     />
                 </picture>
             </div>

@@ -193,5 +193,3 @@ export const initSkillsAnimation = () => {
         '-=0.3'
     );
 };
-
-export const menuAnimation = () => {};

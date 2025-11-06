@@ -32,31 +32,31 @@
         type="font/woff2"
         crossorigin
     />
-    <link rel="preload" href="img/hero-800.webp" as="image" type="image/webp" />
     <link
         rel="preload"
         href="img/hero-1200.webp"
         as="image"
         type="image/webp"
-        media="(min-width: 1201px)"
+        media="(min-width: 1200px) "
     />
-    <link
-        rel="preload"
-        href="img/hero-400.webp"
-        as="image"
-        type="image/webp"
-        media="(max-width: 768px)"
-    />
+
     <link
         rel="preload"
         href="img/hero-mobile.webp"
         as="image"
         type="image/webp"
-        media="(max-width: 768px)"
+        media="(max-width: 425px)"
     />
     <link
         rel="preload"
         href="img/hero-600.webp"
+        as="image"
+        type="image/webp"
+        media="(min-width: 425px) and (max-width: 768px)"
+    />
+    <link
+        rel="preload"
+        href="img/hero-800.webp"
         as="image"
         type="image/webp"
         media="(min-width: 769px) and (max-width: 1200px)"
@@ -71,12 +71,12 @@
 
     <link
         rel="preload"
-        href="css/style.css?_v=20251105000915"
+        href="css/style.css?_v=20251106101147"
         as="style"
         onload="this.onload=null;this.rel='stylesheet'"
     />
-    <noscript><link rel="stylesheet" href="css/style.css?_v=20251105000915" /></noscript>
-    <script type="module" src="js/app.js?_v=20251105000915" defer></script>
+    <noscript><link rel="stylesheet" href="css/style.css?_v=20251106101147" /></noscript>
+    <script type="module" src="js/app.js?_v=20251106101147" defer></script>
 
     <title>Главная - Leonid Kazinsky Personal Page</title>
 </head>
@@ -152,33 +152,32 @@
         <div class="hero__images">
             <div class="hero__image">
                 <picture>
-                    <!-- Мобильные устройства (до 768px) -->
                     <source
                         srcset="img/hero-mobile.webp"
+                        media="(max-width: 425px)"
+                        type="image/webp"
+                    />
+                    <source
+                        srcset="img/hero-600.webp"
                         media="(max-width: 768px)"
                         type="image/webp"
                     />
-                    <!-- Планшеты (769px - 1200px) -->
-                    <source
-                        srcset="img/hero-600.webp"
-                        media="(min-width: 769px) and (max-width: 1200px)"
-                        type="image/webp"
-                    />
-                    <!-- Десктоп (1201px+) -->
                     <source
                         srcset="img/hero-800.webp"
-                        media="(min-width: 1201px)"
+                        media="(max-width: 1200px)"
                         type="image/webp"
                     />
-                    <!-- Fallback -->
+                    <source
+                        srcset="img/hero-1200.webp"
+                        media="(min-width:1200px)"
+                        type="image/webp"
+                    />
                     <img
-                        src="img/hero-600.webp"
+                        src="img/hero.png"
                         alt="Leonid Kazinsky - Frontend Developer"
-                        width="718"
-                        height="561"
-                        style="aspect-ratio: 718/561"
+                        width="768"
+                        height="600"
                         loading="eager"
-                        decoding="async"
                     />
                 </picture>
             </div>

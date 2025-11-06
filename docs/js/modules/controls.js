@@ -85,9 +85,9 @@ function initMenuAnimations(pageElements) {
 }
 
 function openMobileMenu(pageElements) {
-    const { mobileMenuBlock, overlay } = pageElements;
+    const { mobileMenuBlock } = pageElements;
 
-    enableFixedBody(overlay);
+    enableFixedBody();
 
     mobileMenuBlock.classList.add('active');
 
@@ -95,7 +95,7 @@ function openMobileMenu(pageElements) {
 }
 
 function closeMobileMenu(pageElements) {
-    const { mobileMenuBlock, overlay } = pageElements;
+    const { mobileMenuBlock } = pageElements;
 
     menuTimeline.reverse().then(() => {
         gsap.set(mobileMenuBlock, {
@@ -105,14 +105,14 @@ function closeMobileMenu(pageElements) {
         mobileMenuBlock.classList.remove('active');
     });
 
-    disableFixedBody(300, overlay);
+    disableFixedBody(300);
 }
 
-export function enableFixedBody(target) {
+export function enableFixedBody() {
     document.body.classList.add('no-scroll');
 }
 
-export function disableFixedBody(delay, target) {
+export function disableFixedBody(delay) {
     setTimeout(() => {
         document.body.classList.remove('no-scroll');
     }, delay);
