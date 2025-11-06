@@ -32,6 +32,30 @@ window.addEventListener(
 );
 document.addEventListener('DOMContentLoaded', () => {
     initHeroAnimation();
+    const projectsLink = document.querySelector('a[href="#projects-anchor"], a[href="#projects"]');
+
+    if (projectsLink) {
+        // Упрощенный надежный обработчик
+        function scrollToProjects(e) {
+            if (e) {
+                e.preventDefault();
+                e.stopPropagation();
+            }
+
+            const projects = document.getElementById('projects');
+            if (projects) {
+                // Простой скролл к элементу
+                projects.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start',
+                });
+            }
+        }
+
+        // Вешаем обработчики
+        projectsLink.addEventListener('click', scrollToProjects);
+        projectsLink.addEventListener('touchend', scrollToProjects);
+    }
     setTimeout(() => {
         if (document.getElementById('projects')) {
             const projectsSlider = projectsGlide();
